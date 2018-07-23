@@ -1,6 +1,6 @@
 <?php
 
-namespace SyedAunnSlackOutput\Helper;
+namespace SyedAunn\SlackOutput\Helper;
 
 use Exception;
 

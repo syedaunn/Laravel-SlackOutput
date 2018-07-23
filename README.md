@@ -48,7 +48,7 @@ Add the service provider to the `providers` array in `config/app.php`:
 ```php
 'providers' => [
   ...
-  SyedAunnSlackOutput\ServiceProvider::class,
+  SyedAunn\SlackOutput\ServiceProvider::class,
 ],
 ```
 
@@ -57,14 +57,14 @@ and then add the facade to your `aliases` array:
 ```php
 'aliases' => [
   ...
-  'SlackOutput' => SyedAunnSlackOutput\Facade\SlackOutput::class,
+  'SlackOutput' => SyedAunn\SlackOutput\Facade\SlackOutput::class,
 ],
 ```
 
 Publish the configuration file with:
 
 ```sh
-php artisan vendor:publish --provider="SyedAunnSlackOutput\ServiceProvider"
+php artisan vendor:publish --provider="SyedAunn\SlackOutput\ServiceProvider"
 ```
 
 
@@ -142,7 +142,7 @@ protected function schedule(Schedule $schedule)
 To report useful exception to Slack, open `app/Exceptions/Handler.php`, and transform it like:
 
 ```php
-use SyedAunnSlackOutput\Facade\SlackOutput;
+use SyedAunn\SlackOutput\Facade\SlackOutput;
 
 ...
 
@@ -164,7 +164,7 @@ This will only reports exceptions that are not in the `$dontReport` array in the
 To report failed jobs to Slack, open `app/Providers/AppServiceProvider.php`, and transform it like:
 
 ```php
-use SyedAunnSlackOutput\Facade\SlackOutput;
+use SyedAunn\SlackOutput\Facade\SlackOutput;
 
 ...
 
@@ -182,7 +182,7 @@ public function boot()
 To report the output of scheduled commands to Slack, open `app/Console/Kernel.php`, and transform it like:
 
 ```php
-use SyedAunnSlackOutput\Facade\SlackOutput;
+use SyedAunn\SlackOutput\Facade\SlackOutput;
 
 ...
 

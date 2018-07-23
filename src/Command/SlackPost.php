@@ -1,6 +1,6 @@
 <?php
 
-namespace SyedAunnSlackOutput\Command;
+namespace SyedAunn\SlackOutput\Command;
 
 use Illuminate\Console\Command;
 use Maknz\Slack\Client;
