@@ -1,5 +1,5 @@
 {
-  "name": "nicolasmahe/laravel-slack-output",
+  "name": "syedaunn/laravel-slack-output",
   "description": "Sends a message to Slack when something goes wrong with your Laravel application.",
   "keywords": ["laravel", "slack", "exception", "jobs", "command"],
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "autoload": {
     "psr-4": {
-      "NicolasMahe\\SlackOutput\\": "src/"
+      "SyedAunn\SlackOutput\\": "src/"
     }
   }
 }

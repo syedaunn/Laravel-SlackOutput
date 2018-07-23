@@ -1,6 +1,6 @@
 <?php
 
-namespace NicolasMahe\SlackOutput\Library;
+namespace SyedAunnSlackOutput\Library;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Artisan;

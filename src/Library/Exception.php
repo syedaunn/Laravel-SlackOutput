@@ -1,11 +1,11 @@
 <?php
 
-namespace NicolasMahe\SlackOutput\Library;
+namespace SyedAunnSlackOutput\Library;
 
 use Illuminate\Support\Facades\Artisan;
 use Exception as E;
 use Illuminate\Support\Facades\Request;
-use NicolasMahe\SlackOutput\Helper\ExceptionHelper;
+use SyedAunnSlackOutput\Helper\ExceptionHelper;
 
 class Exception
 {
@@ -17,7 +17,7 @@ class Exception
      */
     static public function output(E $e, $channel)
     {
-        Artisan::queue('slack:post', [
+        Artisan::call('slack:post', [
             'to'      => $channel,
             'attach'  => self::exceptionToSlackAttach($e),
             'message' => "Thrown exception"

@@ -1,6 +1,6 @@
 <?php
 
-namespace NicolasMahe\SlackOutput\Library;
+namespace SyedAunnSlackOutput\Library;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Queue\Events\JobFailed as JB;
